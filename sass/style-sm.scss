@@ -1,0 +1,75 @@
+header.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FF6B6B;
+
+    img.profile-pic {
+        max-width: 50vw;
+        max-height: 300px;
+        border-radius: 100%;
+        margin: 5vh auto;
+    }
+
+    div.contact-line {
+        color: #555;
+        font-size: 3.5vw;
+        line-height: 7vw;
+        
+        span.glyphicon {
+            color: #333;
+            margin-right: 5px;
+        }
+    }
+
+    div.menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 90%;
+        text-align: center;
+        border-top: 1px solid #555;
+        margin-top: 5vh;
+
+        a.menu-item {
+            flex-grow: 1;
+            display: block;
+            font-size: 4vw;
+            line-height: 7vw;
+            color: #555;
+            
+            &:hover {
+                background: lighten(#FF6B6B, 7%);
+                color: black;
+            }
+        }
+    }
+}
+
+main {
+    background: url('../img/hypnotize.png');
+
+    div.title {
+        font-size: 3em;
+        text-align: center;
+        color: #444;
+        background: rgba(220,220,220, .4);
+        margin-bottom: 5vh;
+    }
+
+    .content {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    
+    .progress-js {
+        height: 200px;
+        max-height: 33vh;
+        margin-bottom: 5vh;
+
+        svg {
+            height: 100%;
+            display: block;
+        }
+    }
+}
